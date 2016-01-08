@@ -7,8 +7,23 @@ app.run(function () {
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/templates/homeCtrl.html',
-            controller: 'HomeCtrl'
+            templateUrl: '/templates/pages/home.html',
+            controller: 'Home'
+        })
+        .when('/audit', {
+            templateUrl: '/templates/pages/audit.html',
+            controller: 'Home'
+        })
+        .when('/roles', {
+            templateUrl: '/templates/pages/roles.html',
+            controller: 'Home'
+        })
+        .when('/help', {
+            templateUrl: '/templates/pages/help.html'
+        })
+        .when('/login', {
+            templateUrl: '/templates/pages/login.html',
+            controller: 'Home'
         })
         /*
         .when('/project/:id', {
@@ -20,8 +35,6 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/project/:id/paq/:paq', {
         })
         .when('/project/:id/paq/:paq/edit', {
-        })
-        .when('/login', {
         })
         .when('/logout', {
         })
