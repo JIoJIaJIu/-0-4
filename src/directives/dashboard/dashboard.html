@@ -1,0 +1,22 @@
+<div>
+    <div ng-include="'/templates/partials/header.html'"></div>
+
+    <div>
+        <div>
+            <ul>
+                <li><a href="#/">Projects</a></li>
+                <li><a href="#/audit">Audit Trail</a></li>
+                <li><a href="#/roles">Roles</a></li>
+                <li><a href="#/help">Help</a></li>
+            </ul>
+
+            <div>
+                <p>John Doe</p>
+                <a href="#/logout">Logout</a>
+            </div>
+       </div>
+
+        <!-- content -->
+        <ng-transclude></ng-transclude>
+    </div>
+</div>
