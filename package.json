@@ -1,5 +1,5 @@
 {
-  "name": "paq",
+  "name": "Apollo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/JIoJIaJIu/-0-4/issues"
   },
-  "homepage": "https://github.com/JIoJIaJIu/-0-4#readme"
+  "homepage": "https://github.com/JIoJIaJIu/-0-4#readme",
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "bower-installer": "^1.2.0",
+    "gulp": "^3.9.0",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0"
+  }
 }
