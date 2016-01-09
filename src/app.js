@@ -1,14 +1,18 @@
 var app = angular.module('app', ['ngRoute']);
 
 app.run(function () {
-    console.log('aaa');
 });
 
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', function ($routeProvider, $httpBackend) {
+
     $routeProvider
         .when('/', {
             templateUrl: '/templates/pages/home.html',
             controller: 'Home'
+        })
+        .when('/project/:id', {
+            templateUrl: '/templates/pages/project.html',
+            controller: 'Project'
         })
         .when('/audit', {
             templateUrl: '/templates/pages/audit.html',
@@ -16,7 +20,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         })
         .when('/roles', {
             templateUrl: '/templates/pages/roles.html',
-            controller: 'Home'
+            controller: 'Role'
         })
         .when('/help', {
             templateUrl: '/templates/pages/help.html'
@@ -25,18 +29,4 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: '/templates/pages/login.html',
             controller: 'Home'
         })
-        /*
-        .when('/project/:id', {
-            templateUrl: '',
-            controller: ''
-        })
-
-        /*
-        .when('/project/:id/paq/:paq', {
-        })
-        .when('/project/:id/paq/:paq/edit', {
-        })
-        .when('/logout', {
-        })
-        */
 }]);
