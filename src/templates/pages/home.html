@@ -1,1 +1,7 @@
-<dashboard>Projects </dashboard>
+<dashboard>
+<h2>Projects</h2>
+
+<ul ng-repeat="project in projects">
+    <li><project-preview ng-model="project" ng-click="showProject(project.id)"/></li>
+</ul>
+</dashboard>
